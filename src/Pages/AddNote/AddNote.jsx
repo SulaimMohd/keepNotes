@@ -18,7 +18,7 @@ function AddNote() {
     localStorage.removeItem('noteList')
     dispatch(addNote({ id: uuid(), ...state }))
     console.log(state)
-    navigate('/home')
+    navigate('/')
     setState({
       title: '',
       dsicr: '',
